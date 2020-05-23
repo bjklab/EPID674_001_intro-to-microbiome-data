@@ -1,0 +1,176 @@
+---
+title: "Measuring the Microbiome:</br>Methods & Tools"
+subtitle: "📚Epidemiology 674📚"  
+author: 
+  - "Brendan J. Kelly, MD, MS"
+  - "Kyle Bittinger, PhD"
+date: 'Updated: `r format(Sys.Date(), "%d %B %Y")`'
+output:
+  xaringan::moon_reader:
+    self_contained: TRUE
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+background-image: url(svg/bacteria.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE, eval=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#011F5B",
+  secondary_color = "#990000",
+  inverse_header_color = "#FFFFFF",
+  header_font_google = google_font("Roboto Condensed"),
+  text_font_google = google_font("Roboto"),
+  code_font_google = google_font("Roboto Mono"),
+  # padding = "64px 64px 64px 64px"
+  # base_font_size = "24px",
+  # text_font_base = "1rem",
+  # header_h1_font_size = "2.75rem",
+  # header_h2_font_size = "2rem",
+  # header_h3_font_size = "1.25rem",
+)
+```
+
+# Welcome!
+
+
+
+---
+
+# Where am I? How did I get here?
+
+.pull-left[
+
+<span style="font-size: 1.25rem; text-indent: 100px">Epidemiology 674</span>
+    
+<span style="font-size: 1.25rem;">Measuring the Microbiome:<br/>Methods & Tools</span>
+
+]
+
+.pull-right[
+
+- You study epidemiology  
+
+- You study microbiology.
+
+- You study informatics.
+
+- You study statistics.
+
+]
+
+
+---
+background-image: url(svg/micro_petri.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
+
+# How to measure "the microbiome"?
+
+
+---
+
+# Membership, genes, or metabolites?
+
+.pull-left[
+
+- Which "microbiome"?
+
+    - microbial ecology
+
+    - microbial metabolism
+
+    - host-microbe interactions
+
+]
+
+.pull-right[
+
+- measurement methods and tools differ __BUT__ data structures similar and create some common concerns
+
+    - sparse count data
+    
+    - misclassification
+    
+]
+
+
+
+
+
+
+
+
+---
+background-image: url(svg/dna.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
+
+# How are microbiome data structured?
+
+
+
+---
+background-image: url(svg/stacked_barchart.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
+
+# Pitfalls and dangers... 
+
+
+
+---
+background-image: url(svg/stacked_barchart.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
+
+# ... analysis methods and models.  
+
+
+
+---
+class: inverse, center, middle
+
+# Get Started
+
+---
+
+# Hello World
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("yihui/xaringan")
+```
+
+
+
+---
+background-image: url(svg/bacteria.svg)
+background-size: 100px
+background-position: 98% 90%
+class: center, middle
+
+# Thank you!
+#### Slides available: [github.com/bjklab](https://www.gihub.com/bjklab/microbiome-measures_01_data-and-danger)
+#### [brendank@pennmedicine.upenn.edu](brendank@pennmedicine.upenn.edu)
+
+
+
+
