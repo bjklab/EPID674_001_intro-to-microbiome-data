@@ -91,6 +91,23 @@ background-size: contain
 
 
 ---
+background-image: url(img/rstudiocloud_rename.png)
+background-size: contain
+
+
+
+---
+background-image: url(svg/coding.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
+
+# Done!
+### (we'll delve into what you're looking at in class!)
+
+
+
+---
 background-image: url(svg/bacteria.svg)
 background-size: 100px
 background-position: 98% 90%
