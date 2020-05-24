@@ -69,7 +69,7 @@ or microbiology...
 
 or informatics...
 
-or statistics.*
+or statistics*
 ]
 ]
 
@@ -112,9 +112,9 @@ class: center, middle, inverse
 
 .pad-left[
 
-- Loose: “the microorganisms in a particular environment” (synonymous with “microbiota”)
+- Loose definition: “the microorganisms in a particular environment” (synonymous with “microbiota”)
   
-- Strict: “the combined genetic material of the microorganisms in a particular environment”
+- Strict definition: “the combined genetic material of the microorganisms in a particular environment”
 
     - emphasis on nucleic acid sequencing 
     
@@ -132,13 +132,13 @@ class: center, middle, inverse
 
     - previously undetected microbial species
     
-    - previously unappreciated inter-taxa interactions
+    - previously unappreciated interspecific interactions
     
     - clinical relevance of these species and interactions
 
 - Technology:
 
-    - __not__ “unbiased” surveys of microbial communities
+    - __NOT__ “unbiased” surveys of microbial communities
     
     - sequencing error, wet and dry lab decisions...
 
@@ -188,14 +188,24 @@ class: center, middle, inverse
 
 
 ---
+background-image: url(svg/spreadsheet_cell.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
 
-# More data... more problems
+# How are microbiome data structured?
+
+
+
+---
+
+# More Data, More Problems
 
 .pad-left[
 
-- Measurement methods and tools differ.
+- Measurement methods and tools differ
 
-- Data embed wet and dry lab choices.
+- Data embed wet and dry lab choices
 
 - __BUT__ data structures similar and create common concerns:
 
@@ -209,16 +219,6 @@ class: center, middle, inverse
 
 
 ---
-background-image: url(svg/spreadsheet_cell.svg)
-background-size: 500px
-background-position: 50% 50%
-class: center, middle, inverse
-
-# How are microbiome data structured?
-
-
-
----
 
 # Microbiome Data Structure
 
@@ -229,9 +229,11 @@ class: center, middle, inverse
 
 - Cross-sectional or time-series measures.
 
-- __Generative model for observed microbiota / genes / metabolites.__
+- Always think on two levels:
 
-- __Measurement model that accounts for constraints of tools we use.__
+    - What's there? __generative model for observed microbiota / genes__
+
+    - How do we know? __measurement model given constraints of our tools__
   
 ]
 
@@ -244,6 +246,25 @@ background-position: 50% 35%
 class: center, middle, inverse
 
 # Pitfalls and dangers... 
+
+
+
+---
+
+# How do microbiome studies go wrong?
+
+.pad-left[
+- "Big data" (p >> n) problems:
+
+    - BSTA 785: Statistical Methods for Genomic Data Analysis
+    
+    - BSTA 789: Big Data
+    
+    - we will briefly survey commonly used techniques (dimension reduction, supervised and unsupervised clustering strategies) to bolster study design and planning
+
+- Microbiome-specific problems...
+
+]
 
 
 
@@ -272,14 +293,14 @@ background-size: 500px
 background-position: 50% 50%
 class: center, middle, inverse
 
-# ... analysis methods and models.  
+# ... analysis methods and models  
 
 
 
 
 ---
 
-# Microbiome Methods in Common Use
+# Microbiome Analysis Methods
 
 .pad-left[
 - Summary statistics (alpha diversity)
@@ -307,11 +328,28 @@ class: center, middle, inverse
 # How are we going to do this online?  
 
 
+---
+
+# EPID 674 Approach
+
+.pad-left[
+
+- To understand these decisions, you need to make them…  
+       … and then make them again another way...
+       
+- You can’t learn microbiome data analysis without looking at microbiome data
+
+- You can’t learn R without looking at R code
+
+- Microbiome data demand reproducible research strategies
+
+]
+
 
 
 ---
 
-# EPID 674 (COVID-19 edition)
+# EPID 674 2020 (COVID-19 edition)
 
 .pad-left[
 - Class schedule (adjusted for online learning)
@@ -320,7 +358,7 @@ class: center, middle, inverse
 
 - Outline of topics covered
 
-- R & Rstudio to __learn by doing!__
+- [rstudio.cloud](https://rstudio.cloud) (R & Rstudio) to __learn by doing!__
 
 - Recommended resources
 
@@ -387,7 +425,7 @@ class: center, middle, inverse
     
     - 30% homework (independent R code exercises)
     
-    - 30% final presentation
+    - 30% final presentation  
       (reproducible analysis report with Rmarkdown)
 
 ]
@@ -402,16 +440,73 @@ class: center, middle, inverse
 
 - Week 1: sequencing, sequence clusters & microbiome data
 
-- Week 2: taxonomy, phylogeny, binning & misclassification
+- Week 2: taxonomy, phylogeny, binning & (mis)classification
 
-- Week 3: 
+- Week 3: "diversity" as summary statistic or distance
 
-- Week 4:
+- Week 4: compositional data analysis & mixture models
 
-- Week 5: 
+- Week 5: dimension reduction methods, ordination
+
+- Week 6: planning microbiome studies
 
 ]
 
+
+
+---
+
+# EPID 674: Resources
+
+.pad-left[
+
+- [rstudio.cloud](https://rstudio.cloud)
+
+    - supported method for assignments & in-class exercises
+    
+    - if you want to install R & RStudio locally, please do so!  
+    
+      (R: download & install from [CRAN](https://cran.r-project.org/))  
+      
+      (Rstudio: download & install from [rstudio.com](https://www.rstudio.com))  
+      
+
+
+]
+
+
+
+---
+
+# EPID 674: Resources
+
+.pad-left[
+
+- R programming & “tidyverse”: 
+
+    - Wickham’s R for Data Science  
+      ([https://r4ds.had.co.nz/](https://r4ds.had.co.nz/))
+
+- Analysis:
+
+    - Legendre & Legendre’s Numerical Ecology
+    
+    - James, Witten, Hastie & Tibshirani’s  
+      _Introduction to Statistical Learning with Applications in R_  
+      ([http://faculty.marshall.usc.edu/gareth-james/ISL/](http://faculty.marshall.usc.edu/gareth-james/ISL/))
+      
+
+
+]
+
+
+---
+class: center, middle, inverse
+background-image: url(svg/conjugation.svg)
+background-size: 500px
+background-position: 50% 50%
+
+# Questions?
 
 
 ---

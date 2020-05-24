@@ -1,0 +1,105 @@
+---
+title: "Assignment: Read & Discuss"
+subtitle: "Your Own Research & The Microbiome"  
+author: 
+  - "Brendan J. Kelly, MD, MS"
+date: 'Updated: `r format(Sys.Date(), "%d %B %Y")`'
+output:
+  xaringan::moon_reader:
+    seal: FALSE
+    self_contained: TRUE
+    lib_dir: libs
+    css: xaringan-themer-plus.css
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+background-image: url(svg/coding.svg)
+background-size: 500px
+background-position: 50% 50%
+class: center, middle, inverse
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE, eval=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#011F5B",
+  secondary_color = "#990000",
+  inverse_header_color = "#FFFFFF",
+  header_font_google = google_font("Roboto Condensed"),
+  text_font_google = google_font("Roboto"),
+  code_font_google = google_font("Roboto Mono"),
+  # padding = "64px 64px 64px 64px"
+  # base_font_size = "24px",
+  # text_font_base = "1rem",
+  # header_h1_font_size = "2.75rem",
+  # header_h2_font_size = "2rem",
+  # header_h3_font_size = "1.25rem",
+)
+```
+
+# Assignment 001b
+
+
+
+---
+
+# EPID674 on [rstudio.cloud](https://rstudio.cloud) (R & Rstudio)
+
+.pad-left[
+
+- Go to [https://rstudio.cloud](https://rstudio.cloud)
+
+- Signup (requires name & email; or can use google/github account)
+
+- Clone the first class repository:  
+  [https://github.com/bjklab/EPID674_001_intro-to-microbiome-data.git](https://github.com/bjklab/EPID674_001_intro-to-microbiome-data.git)
+
+- You're done!
+
+]
+
+
+
+---
+background-image: url(img/rstudiocloud_front.png)
+background-size: contain
+
+
+
+---
+background-image: url(img/rstudiocloud_signup.png)
+background-size: contain
+
+
+
+---
+background-image: url(img/rstudiocloud_newproj.png)
+background-size: contain
+
+
+
+---
+background-image: url(img/rstudiocloud_repo.png)
+background-size: contain
+
+
+
+---
+background-image: url(svg/bacteria.svg)
+background-size: 100px
+background-position: 98% 90%
+class: center, middle
+
+# Thank you!
+#### Slides available: [github.com/bjklab](https://www.gihub.com/bjklab/microbiome-measures_01_data-and-danger)
+#### [brendank@pennmedicine.upenn.edu](brendank@pennmedicine.upenn.edu)
+
+
+
+

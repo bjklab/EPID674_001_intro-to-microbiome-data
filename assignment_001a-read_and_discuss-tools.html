@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang xml:lang>
   <head>
-    <title>Measuring the Microbiome:Methods &amp; Tools</title>
+    <title>Assignment: Read &amp; Discuss</title>
     <meta charset="utf-8" />
     <meta name="author" content="Brendan J. Kelly, MD, MS" />
-    <meta name="author" content="Kyle Bittinger, PhD" />
     <style type="text/css">
 @font-face {
 font-family: 'Roboto';
@@ -264,17 +263,8 @@ background-color: var(--black);
   </head>
   <body>
     <textarea id="source">
-class: center, middle, inverse, title-slide
 
-# Measuring the Microbiome:</br>Methods &amp; Tools
-## 📚Epidemiology 674📚
-### Brendan J. Kelly, MD, MS
-### Kyle Bittinger, PhD
-### Updated: 24 May 2020
-
----
-
-background-image: url(svg/bacteria.svg)
+background-image: url(svg/reading.svg)
 background-size: 500px
 background-position: 50% 50%
 class: center, middle, inverse
@@ -283,104 +273,33 @@ class: center, middle, inverse
 
 
 
-# Welcome!
+# Assignment 001a
 
 
 
 ---
 
-# Where am I? How did I get here?
-
-.pull-left[
-
-&lt;span style=&quot;font-size: 1.25rem; margin-left: 10px&quot;&gt; __Epidemiology 674__ &lt;/span&gt;
-    
-&lt;span style=&quot;font-size: 1.25rem; margin-left: 10px&quot;&gt; __Measuring the Microbiome:__ &lt;/span&gt;
-
-&lt;span style=&quot;font-size: 1.25rem; margin-left: 10px&quot;&gt; __Methods &amp; Tools__ &lt;/span&gt;
-
-]
-
-.pull-right[
-
-You study epidemiology...  
-.pad-left[
-or microbiology...
-
-or informatics...
-
-or statistics*
-]
-]
-
-.footnote[
-*Great opportunity to learn from each other, but this will be challenging online.
-]
-
-
-
----
-
-# Course Goals
+# Microbiome Analysis Review
 
 .pad-left[
-- How do we measure the microbiome?
 
-- How are microbiome data structured?
-
-- What are the pitfalls and dangers of microbiome data analysis?
-
-- What analytic methods and model frameworks help address those challenges?
-
-- __Reproducibility and rigor in microbiome research (e.g., reproducible reports)__
+- __Read:__ Kuczynski J, Lauber CL, Walters WA, Parfrey LW, Clemente JC, Gevers D, Knight R. Experimental and analytical tools for studying the human microbiome. Nat Rev Genet. 2011 Dec 16;13(1):47–58. Available from: http://dx.doi.org/10.1038/nrg3129 PMCID: PMC5119550 
   
+- __Reflect__ on the figure showing &quot;Effects of primer choice in targeted amplicon sequencing.&quot;   
+
 ]
 
 
----
-background-image: url(svg/petri_mixed.svg)
-background-size: 500px
-background-position: 50% 50%
-class: center, middle, inverse
-
-# How to measure the microbiome?
-
 
 ---
 
-# &quot;The Microbiome&quot;
+# DNA Sequencing Review
 
 .pad-left[
 
-- Loose definition: “the microorganisms in a particular environment” (synonymous with “microbiota”)
+- __Read:__  Shendure J, Balasubramanian S, Church GM, Gilbert W, Rogers J, Schloss JA, Waterston RH. DNA sequencing at 40: past, present and future. Nature. Macmillan Publishers Limited, part of Springer Nature. All rights reserved.; 2017 Oct 19;550(7676):345–353. Available from: http://dx.doi.org/10.1038/nature24286 PMID: 29019985
   
-- Strict definition: “the combined genetic material of the microorganisms in a particular environment”
-
-    - emphasis on nucleic acid sequencing 
-    
-    - “omics” often defined by the tools on which they depend
-
-]
-
-
----
-
-# Biology/Ecology + Technology
-
-.pad-left[
-- Biology/Ecology:
-
-    - previously undetected microbial species
-    
-    - previously unappreciated interspecific interactions
-    
-    - clinical relevance of these species and interactions
-
-- Technology:
-
-    - __NOT__ “unbiased” surveys of microbial communities
-    
-    - sequencing error, wet and dry lab decisions...
+- __Reflect__ on the section describing &quot;Sequencers as a molecule counting device.&quot;   
 
 ]
 
@@ -388,365 +307,21 @@ class: center, middle, inverse
 
 ---
 
-# Wet Lab Decisions
-
-.pad-left[
-- Specimen acquisition:
-
-    - what is being sampled?
-    
-    - how are samples obtained and processed? (e.g., cell-associated bacteria from BAL; difficult-to-lyse Mycobacteria or spores)
-
-- Sequencing library preparation:
-
-    - choose amplicon?
-    
-    - choose metagenomic?
-
-]
-
-
----
-
-# Dry Lab Decisions
+# Online Discussion
 
 .pad-left[
 
-- Sequence modality: short reads versus long reads?
+- On the Canvas class discussion board, please tell us:
 
-- Barcodes and de-multiplexing: Golay codes -- how much error is too much error?
-
-- Paired-end joining: how much overlap and how much error?
-
-- Sequence clustering:
-
-    - amplicon: operational taxonomic units or sequence variants?
+    1. What is your research focus?
     
-    - metagenomic: choice of assignment tool?
-
-]
-
-
----
-background-image: url(svg/spreadsheet_cell.svg)
-background-size: 500px
-background-position: 50% 50%
-class: center, middle, inverse
-
-# How are microbiome data structured?
-
-
-
----
-
-# More Data, More Problems
-
-.pad-left[
-
-- Measurement methods and tools differ
-
-- Data embed wet and dry lab choices
-
-- __BUT__ data structures similar and create common concerns:
-
-    - sparse count data
+    2. If you do not already research the microbiome, how might the microbiome be relevant to your research? And how might the effect of primer choice on targeted amplicon sequencing impact microbiome studies in your field?
     
-    - misclassification risks
-    
-    - high-dimensional data (p &gt;&gt; n)
-    
-]
-
-
----
-
-# Microbiome Data Structure
-
-.pad-left[
-- Sparse count data generated by sequence binning/assignment.
-
-- Typically 1e2 - 1e4 microbiome variables (exceed observations).
-
-- Cross-sectional or time-series measures.
-
-- Always think on two levels:
-
-    - What's there? __generative model for observed microbiota / genes__
-
-    - How do we know? __measurement model given constraints of our tools__
-  
-]
-
-
-
----
-background-image: url(svg/danger-svgrepo-com.svg)
-background-size: 500px
-background-position: 50% 35%
-class: center, middle, inverse
-
-# Pitfalls and dangers... 
-
-
-
----
-
-# How do microbiome studies go wrong?
-
-.pad-left[
-- &quot;Big data&quot; (p &gt;&gt; n) problems:
-
-    - BSTA 785: Statistical Methods for Genomic Data Analysis
-    
-    - BSTA 789: Big Data
-    
-    - we will briefly survey commonly used techniques (dimension reduction, supervised and unsupervised clustering strategies) to bolster study design and planning
-
-- Microbiome-specific problems...
-
-]
-
-
-
----
-
-# How do microbiome studies go wrong?
-
-.pad-left[
-- What is adequate sampling to estimate composition? (&quot;shallow shotgun&quot;)
-
-- How are microbes shared across study participants? (&quot;cage effects&quot;)
-
-- How to link sequence data to extant knowledge? (binning ITS data) 
-
-- Absolute abundance versus relative abundance? (Gloor et al)
-
-- How to discriminate sub-species community members? (&quot;strain-level&quot;)
-
-]
-
-
-
----
-background-image: url(svg/stacked_barchart.svg)
-background-size: 500px
-background-position: 50% 50%
-class: center, middle, inverse
-
-# ... analysis methods and models  
-
-
-
-
----
-
-# Microbiome Analysis Methods
-
-.pad-left[
-- Summary statistics (alpha diversity)
-
-- Distance metrics (beta diversity)
-
-- Mixture models (Dirichlet multinomial mixtures) 
-
-- Non-parametric tests (PERMANOVA/adonis)
-
-- Data transformations (centered log-ratio transform)
-
-- __No best method to address all questions!__
-
-]
-
-
-
----
-background-image: url(svg/computer_talk.svg)
-background-size: 500px
-background-position: 50% 50%
-class: center, middle, inverse
-
-# How are we going to do this online?  
-
-
----
-
-# EPID 674 Approach
-
-.pad-left[
-
-- To understand these decisions, you need to make them…  
-       … and then make them again another way...
-       
-- You can’t learn microbiome data analysis without looking at microbiome data
-
-- You can’t learn R without looking at R code
-
-- Microbiome data demand reproducible research strategies
-
-]
-
-
-
----
-
-# EPID 674 2020 (COVID-19 edition)
-
-.pad-left[
-- Class schedule (adjusted for online learning)
-
-- Assignments and evaluations
-
-- Outline of topics covered
-
-- [rstudio.cloud](https://rstudio.cloud) (R &amp; Rstudio) to __learn by doing!__
-
-- Recommended resources
-
-]
-
-
----
-
-# EPID 674: Class Schedule
-
-.pad-left[
-
-- Classes Tuesdays &amp; Thursdays May 26 - June 30, 2020
-
-- Each class session:
-
-    1. lecture chunks (prerecorded for your convenience)
-    
-    2. readings &amp; Canvas discussion
-    
-    3. R coding primers
-    
-    4. live discussion 3-4pm on BlueJeans: [https://bluejeans.com/9715046666](https://bluejeans.com/9715046666)
-    
-- Complete lectures, readings, &amp; primers __before__ live sessions -- bring questions! 
-
-]
-
-
-
----
-
-# EPID 674: Assignments
-
-.pad-left[
-
-- Assignments:
-
-    1. readings &amp; Canvas discussion boards
-    
-    2. R code exercises
-    
-    3. in-class presentations
-    
-    4. final presentation
-    (reproducible analysis report with RMarkdown)
-    
-]
-
-
-
----
-
-# EPID 674: Evaluation
-
-.pad-left[
-
-- Grades:
-
-    - 40% participation
-      (Canvas &amp; BlueJeans discussion,
-      in-class coding exercises,
-      in-class presentations)
-    
-    - 30% homework (independent R code exercises)
-    
-    - 30% final presentation  
-      (reproducible analysis report with Rmarkdown)
-
-]
-
-
-
----
-
-# EPID 674: Outline
-
-.pad-left[
-
-- Week 1: sequencing, sequence clusters &amp; microbiome data
-
-- Week 2: taxonomy, phylogeny, binning &amp; (mis)classification
-
-- Week 3: &quot;diversity&quot; as summary statistic or distance
-
-- Week 4: compositional data analysis &amp; mixture models
-
-- Week 5: dimension reduction methods, ordination
-
-- Week 6: planning microbiome studies
-
-]
-
-
-
----
-
-# EPID 674: Resources
-
-.pad-left[
-
-- [rstudio.cloud](https://rstudio.cloud)
-
-    - supported method for assignments &amp; in-class exercises
-    
-    - if you want to install R &amp; RStudio locally, please do so!  
-    
-      (R: download &amp; install from [CRAN](https://cran.r-project.org/))  
-      
-      (Rstudio: download &amp; install from [rstudio.com](https://www.rstudio.com))  
-      
+    3. If you do already research the microbiome, what sequencing methods do you use and why?
 
 
 ]
 
-
-
----
-
-# EPID 674: Resources
-
-.pad-left[
-
-- R programming &amp; “tidyverse”: 
-
-    - Wickham’s R for Data Science  
-      ([https://r4ds.had.co.nz/](https://r4ds.had.co.nz/))
-
-- Analysis:
-
-    - Legendre &amp; Legendre’s Numerical Ecology
-    
-    - James, Witten, Hastie &amp; Tibshirani’s  
-      _Introduction to Statistical Learning with Applications in R_  
-      ([http://faculty.marshall.usc.edu/gareth-james/ISL/](http://faculty.marshall.usc.edu/gareth-james/ISL/))
-      
-
-
-]
-
-
----
-class: center, middle, inverse
-background-image: url(svg/conjugation.svg)
-background-size: 500px
-background-position: 50% 50%
-
-# Questions?
 
 
 ---
