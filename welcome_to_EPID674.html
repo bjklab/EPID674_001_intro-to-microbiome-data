@@ -156,14 +156,19 @@ padding-top: 1em;
 }
 .pull-left {
 float: left;
-width: 47%;
+width: 45%;
+padding-left: 1.2em;
 }
 .pull-right {
 float: right;
-width: 47%;
+width: 45%;
+padding-right: 1.2em;
 }
 .pull-right ~ * {
 clear: both;
+}
+.pad-left {
+padding-left: 40px;
 }
 img, video, iframe {
 max-width: 100%;
@@ -288,32 +293,57 @@ class: center, middle, inverse
 
 .pull-left[
 
-&lt;span style=&quot;font-size: 1.25rem; text-indent: 100px&quot;&gt;Epidemiology 674&lt;/span&gt;
+&lt;span style=&quot;font-size: 1.25rem; margin-left: 10px&quot;&gt; __Epidemiology 674__ &lt;/span&gt;
     
-&lt;span style=&quot;font-size: 1.25rem;&quot;&gt;Measuring the Microbiome:&lt;br/&gt;Methods &amp; Tools&lt;/span&gt;
+&lt;span style=&quot;font-size: 1.25rem; margin-left: 10px&quot;&gt; __Measuring the Microbiome:__ &lt;/span&gt;
+
+&lt;span style=&quot;font-size: 1.25rem; margin-left: 10px&quot;&gt; __Methods &amp; Tools__ &lt;/span&gt;
 
 ]
 
 .pull-right[
 
-- You study epidemiology  
+You study epidemiology...  
 
-- You study microbiology.
+&lt;span style=&quot;margin-left: 40px;&quot;&gt; or microbiology...&lt;/span&gt;  
 
-- You study informatics.
+&lt;span style=&quot;margin-left: 40px;&quot;&gt; or informatics...&lt;/span&gt;
 
-- You study statistics.
+&lt;span style=&quot;margin-left: 40px;&quot;&gt; or statistics.* &lt;/span&gt;
 
+]
+
+.footnote[
+&lt;sup&gt;*&lt;/sup&gt; We must learn from each other. This will be challenging online.
+]
+
+
+
+---
+
+# Course Goals
+
+.pad-left[
+- How do we measure the microbiome?
+
+- How are microbiome data structured?
+
+- What are the pitfalls and dangers of microbiome data analysis?
+
+- What analytic methods and model frameworks help address those challenges?
+
+- __Reproducibility and rigor in microbiome research.__
+  
 ]
 
 
 ---
-background-image: url(svg/micro_petri.svg)
+background-image: url(svg/petri_mixed.svg)
 background-size: 500px
 background-position: 50% 50%
 class: center, middle, inverse
 
-# How to measure &quot;the microbiome&quot;?
+# How to measure the microbiome?
 
 
 ---
@@ -322,7 +352,7 @@ class: center, middle, inverse
 
 .pull-left[
 
-- Which &quot;microbiome&quot;?
+- which &quot;microbiome&quot;?
 
     - microbial ecology
 
@@ -350,7 +380,7 @@ class: center, middle, inverse
 
 
 ---
-background-image: url(svg/dna.svg)
+background-image: url(svg/spreadsheet_cell.svg)
 background-size: 500px
 background-position: 50% 50%
 class: center, middle, inverse
@@ -360,9 +390,9 @@ class: center, middle, inverse
 
 
 ---
-background-image: url(svg/stacked_barchart.svg)
+background-image: url(svg/danger-svgrepo-com.svg)
 background-size: 500px
-background-position: 50% 50%
+background-position: 50% 35%
 class: center, middle, inverse
 
 # Pitfalls and dangers... 

@@ -167,6 +167,9 @@ a, a > code {
 .pull-right ~ * {
   clear: both;
 }
+.pad-left {
+  padding-left: 40px;
+}
 img, video, iframe {
   max-width: 100%;
 }

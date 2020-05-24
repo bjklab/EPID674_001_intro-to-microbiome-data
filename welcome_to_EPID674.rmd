@@ -9,7 +9,7 @@ output:
   xaringan::moon_reader:
     self_contained: TRUE
     lib_dir: libs
-    css: xaringan-themer.css
+    css: xaringan-themer-plus.css
     nature:
       ratio: 16:9
       highlightStyle: github
@@ -53,32 +53,57 @@ style_duo_accent(
 
 .pull-left[
 
-<span style="font-size: 1.25rem; text-indent: 100px">Epidemiology 674</span>
+<span style="font-size: 1.25rem; margin-left: 10px"> __Epidemiology 674__ </span>
     
-<span style="font-size: 1.25rem;">Measuring the Microbiome:<br/>Methods & Tools</span>
+<span style="font-size: 1.25rem; margin-left: 10px"> __Measuring the Microbiome:__ </span>
+
+<span style="font-size: 1.25rem; margin-left: 10px"> __Methods & Tools__ </span>
 
 ]
 
 .pull-right[
 
-- You study epidemiology  
+You study epidemiology...  
 
-- You study microbiology.
+<span style="margin-left: 40px;"> or microbiology...</span>  
 
-- You study informatics.
+<span style="margin-left: 40px;"> or informatics...</span>
 
-- You study statistics.
+<span style="margin-left: 40px;"> or statistics.* </span>
 
+]
+
+.footnote[
+<sup>*</sup> We must learn from each other. This will be challenging online.
+]
+
+
+
+---
+
+# Course Goals
+
+.pad-left[
+- How do we measure the microbiome?
+
+- How are microbiome data structured?
+
+- What are the pitfalls and dangers of microbiome data analysis?
+
+- What analytic methods and model frameworks help address those challenges?
+
+- __Reproducibility and rigor in microbiome research.__
+  
 ]
 
 
 ---
-background-image: url(svg/micro_petri.svg)
+background-image: url(svg/petri_mixed.svg)
 background-size: 500px
 background-position: 50% 50%
 class: center, middle, inverse
 
-# How to measure "the microbiome"?
+# How to measure the microbiome?
 
 
 ---
@@ -87,7 +112,7 @@ class: center, middle, inverse
 
 .pull-left[
 
-- Which "microbiome"?
+- which "microbiome"?
 
     - microbial ecology
 
@@ -115,7 +140,7 @@ class: center, middle, inverse
 
 
 ---
-background-image: url(svg/dna.svg)
+background-image: url(svg/spreadsheet_cell.svg)
 background-size: 500px
 background-position: 50% 50%
 class: center, middle, inverse
@@ -125,9 +150,9 @@ class: center, middle, inverse
 
 
 ---
-background-image: url(svg/stacked_barchart.svg)
+background-image: url(svg/danger-svgrepo-com.svg)
 background-size: 500px
-background-position: 50% 50%
+background-position: 50% 35%
 class: center, middle, inverse
 
 # Pitfalls and dangers... 
