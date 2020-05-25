@@ -1,6 +1,6 @@
 ---
 title: "Measuring the Microbiome:</br>Methods & Tools"
-subtitle: "📚Epidemiology 674📚"  
+subtitle: "📚EPID 674📚"  
 author: 
   - "Brendan J. Kelly, MD, MS"
   - "Kyle Bittinger, PhD"
