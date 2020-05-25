@@ -103,7 +103,7 @@ background-position: 50% 50%
 class: center, middle, inverse
 
 # Done!
-### (we'll delve into what you're looking at in class!)
+### (we'll delve into what you're looking at in class)
 
 
 
