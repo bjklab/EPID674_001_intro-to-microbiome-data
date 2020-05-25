@@ -130,13 +130,13 @@ class: center, middle, inverse
 .pad-left[
 - Biology/Ecology:
 
-    - previously undetected microbial species
-    
-    - previously unappreciated interspecific interactions
+    - previously undetected microbial species & interspecific interactions
     
     - clinical relevance of these species and interactions
 
 - Technology:
+
+    - [depends on high-throughput ("next generation") sequencing](https://youtu.be/fCd6B5HRaZ8)
 
     - __NOT__ “unbiased” surveys of microbial communities
     
