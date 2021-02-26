@@ -4,7 +4,7 @@ subtitle: "📚EPID 674📚"
 author: 
   - "Brendan J. Kelly, MD, MS"
   - "Kyle Bittinger, PhD"
-date: 'Updated: 21 May 2020' # `r format(Sys.Date(), "%d %B %Y")`
+date: 'Updated: 25 May 2020' # `r format(Sys.Date(), "%d %B %Y")`
 output:
   xaringan::moon_reader:
     self_contained: TRUE
